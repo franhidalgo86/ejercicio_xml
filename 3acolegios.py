@@ -4,6 +4,5 @@ arbol=etree.parse("/home/franhidalgo/Documentos/LM/XML/colegios.xml")
 directorios=arbol.getroot()
 direct=directorios.findall("directorio")
 for cole in direct:
-	if "Comedor: S" in cole.find("descripcion").text:
-			print cole.find("nombre").text
-			print "Todos estos colegios tienen Comedor"
+	if "Comedor: S" in cole.find("descripcion").text:	
+		print "Tiene comedor: " ,cole.find("nombre").text
