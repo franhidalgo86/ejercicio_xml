@@ -6,3 +6,6 @@ direct=directorios.findall("directorio/nombre")
 for nom in direct:
 	print nom.text
 cole=raw_input("Mete un colegio: ")
+for dire in directorios:
+	if dire.find("nombre").text==cole:
+		print cole, dire.find("direccion")
