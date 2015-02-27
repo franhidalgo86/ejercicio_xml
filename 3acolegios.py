@@ -6,3 +6,4 @@ direct=directorios.findall("directorio")
 for cole in direct:
 	if "Comedor: S" in cole.find("descripcion").text:
 			print cole.find("nombre").text
+			print "Todos estos colegios tienen Comedor"
