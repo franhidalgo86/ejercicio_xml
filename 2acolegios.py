@@ -8,4 +8,4 @@ for nom in direct:
 cole=raw_input("Mete un colegio: ")
 for dire in directorios:
 	if dire.find("nombre").text==cole:
-		print cole, dire.find("direccion")
+		print cole, dire.find("direccion").text
