@@ -5,3 +5,6 @@ directorios=arbol.getroot()
 direct=directorios.findall("directorio")
 contador=0
 for astu in direct:
+	if "Asturiano: S" or "Asturiano: s" in astu.find("descripcion").text:
+		contador=contador+1
+print "Hay: ", contador, "colegios que dan Asturiano"
